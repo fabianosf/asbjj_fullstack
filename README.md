@@ -15,7 +15,7 @@
 ##### Instalar o docker no seu sistema operacional
 
 
-##### Para rodar o projeto faca ##### 
+##### Para rodar o projeto faça ##### 
 ##### 1 - entrar na pasta Projeto e rodar : docker-compose up --build
 ##### 2 - dando stop no projeto : docker-compose down
 
