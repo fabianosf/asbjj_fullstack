@@ -9,8 +9,8 @@
 
 
 ##### Pontos a serem vistos antes de rodar as aplicações
-##### Backend(Django) - baixar o projeto, criar um ambiente virtual, entrar no ambiente virtual e fazer : pip install -r requirements.txt(vai instalar as dependencias do projeto)
-##### Frontend(Reactjs) - baixar o projeto e efetuar o npm install, lembrando que tem que ter o node.js instalado.
+##### Backend(Django) - baixar o projeto, criar um ambiente virtual, entrar no ambiente virtual e fazer : pip install -r requirements.txt(python instalado)
+##### Frontend(Reactjs) - baixar o projeto e efetuar o npm install, lembrando que tem que ter o node.js e npm instalado.
 
 
 ##### Para rodar o projeto faca ##### 
