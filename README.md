@@ -1,7 +1,7 @@
 # Aplicacao Asbjj + Docker 
-# Backend(Django)
-# Frontend(Reactjs)
-# Banco de dados(PostgreSQL)
+## Backend(Django)
+## Frontend(Reactjs)
+## Banco de dados(PostgreSQL)
 
 
 ## Pontos a serem vistos antes de rodar as aplicações
