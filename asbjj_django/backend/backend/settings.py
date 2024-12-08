@@ -154,4 +154,4 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'fabiano.freitas@gmail.com'
-EMAIL_HOST_PASSWORD = 'Fab260281xx'
+EMAIL_HOST_PASSWORD = 'senha'
