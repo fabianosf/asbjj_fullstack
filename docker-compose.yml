@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./asbjj_django/backend
+    container_name: django-backend
+    volumes:
+      - ./asbjj_django/backend:/app
+      - /home/fabianosf/Documents/Projeto/asbjj_django/backend/media:/app/media  # Garantir que o diretório de mídia correto seja montado
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DJANGO_ENV=production
+      - DATABASE_URL=postgres://postgres:postgres@db:5432/meubanco
+    command: python manage.py runserver 0.0.0.0:8000  # Certifique-se de que o Django está ouvindo em todas as interfaces de rede
+
+  frontend:
+    build: ./asbjj_reactjs
+    container_name: react-frontend
+    volumes:
+      - ./asbjj_reactjs:/app
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    environment:
+      - API_URL=http://backend:8000  # A URL do backend (Django) será acessada via nome do serviço 'backend'
+
+  db:
+    image: postgres:13
+    container_name: postgres-db
+    environment:
+      POSTGRES_DB: meubanco
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"  # A porta do banco de dados, que é 5432 no contêiner, está sendo mapeada para 5433 no host
+
+volumes:
+  postgres-data:

@@ -1,0 +1,6 @@
+* criar area administrativa do administrador - FEITO
+* configurar acesso apenas para o administrador ter acesso aos comprovantes de pagamento enviado pelo aluno - NAO FEITO
+* configurar um sistema de inteligencia para o publico tirar duvida com relacao a academia - NAO FEITO
+
+############################### Docker ###############################
+o arquivo Dockerfile fica dentro da pasta do manage.py
