@@ -18,6 +18,6 @@
 ##### 2 - dando stop no projeto : docker-compose down
 
 ##### Acessos no banco de dados PostgreSQL #####
-anamalu
-anamalu@gmail.com
-A260281@
+#### anamalu
+#### anamalu@gmail.com
+#### A260281@
