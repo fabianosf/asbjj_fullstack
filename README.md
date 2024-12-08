@@ -18,6 +18,6 @@
 ##### 2 - dando stop no projeto : docker-compose down
 
 ##### Acessos no banco de dados PostgreSQL #####
-#### anamalu
-#### anamalu@gmail.com
-#### A260281@
+#### username: anamalu
+#### email: anamalu@gmail.com
+#### senha: A260281@
