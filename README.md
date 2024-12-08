@@ -1,4 +1,4 @@
-# Aplicacao Asbjj + Docker 
+# Aplicacao Asbjj + Django + Reactjs + Docker 
 
 
 
