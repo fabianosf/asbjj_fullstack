@@ -10,6 +10,7 @@
 
 ##### Pontos a serem vistos antes de rodar as aplicações
 ##### Backend(Django) - baixar o projeto, criar um ambiente virtual, entrar no ambiente virtual e fazer : pip install -r requirements.txt(python instalado)
+##### settings.py - colocar o seu email na aplicação para o reenvio de senha caso utilize
 ##### Frontend(Reactjs) - baixar o projeto e efetuar o npm install, lembrando que tem que ter o node.js e npm instalado.
 ##### Instalar o docker no seu sistema operacional
 
