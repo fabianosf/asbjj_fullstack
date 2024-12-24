@@ -58,8 +58,8 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-    "http://172.18.0.4:5173"
+    "http://172.18.0.4:5173",  # Origem do React
+    "http://localhost:5173",  # Caso você mude para localhost
 ]
 
 
@@ -88,6 +88,7 @@ WSGI_APPLICATION = "backend.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+'''
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
@@ -96,7 +97,7 @@ DATABASES = {
 }
  
  
-
+'''
 
 
 # Password validation
@@ -137,7 +138,7 @@ USE_TZ = True
 # o frontend é o reactjs
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+#STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

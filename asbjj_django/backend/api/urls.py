@@ -1,9 +1,10 @@
 from django.urls import path
 from .views import HomeView, AboutView, ServiceView, ContactView, LoginView, SignupView
 from .views import PasswordResetRequestView, PasswordResetConfirmView
-
+from .views import image_list
 
 urlpatterns = [
+    path('api/images/', image_list, name='image_list'),
     path('api/home/', HomeView.as_view(), name='home'),
     path('api/about/', AboutView.as_view(), name='about'),
     path('api/service/', ServiceView.as_view(), name='service'),

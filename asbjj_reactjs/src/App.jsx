@@ -12,6 +12,7 @@ import AreaDoAluno from './components/AreaDoAluno/AreaDoAluno'; // Página da Á
 import PasswordResetForm from './components/PasswordResetForm/PasswordResetForm'; // Importa o componente de reset de senha
 import PasswordResetConfirmForm from './components/PasswordResetConfirmForm/PasswordResetConfirmForm'; // Importa o componente de confirmação de reset
 
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -27,7 +28,6 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<Signup />} /> 
           <Route path="/area-do-aluno" element={<AreaDoAluno />} /> {/* Página da Área do Aluno */}
-          
           
           {/* Rota para Resetar Senha */}
           <Route path='/reset' element={<PasswordResetForm />} /> {/* Página para solicitar o reset */}

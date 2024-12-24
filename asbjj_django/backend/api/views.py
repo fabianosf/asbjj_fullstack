@@ -17,6 +17,21 @@ from django.http import JsonResponse
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 
+
+def image_list(request):
+    # Caminho do diretório de imagens
+    media_path = os.path.join(settings.MEDIA_ROOT, 'image')
+
+    # Lista as imagens no diretório
+    images = [
+        f"/media/image/{file}" for file in os.listdir(media_path)
+        if os.path.isfile(os.path.join(media_path, file))
+    ]
+
+    # Retorna a lista como JSON
+    return JsonResponse({"images": images})
+
+
 class HomeView(APIView):
     def get(self, request):
         data = {
